@@ -20,30 +20,68 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="如果你不觉得一年前的自己是一个蠢货，那说名这一年你并没学到什么东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="bug设计工程师">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="vscode使用和配置文章需要用到工具    工具     vscode https:&#x2F;&#x2F;code.visualstudio.com&#x2F;   mingw64 https:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;mingw-w64&#x2F;files&#x2F;    软件已经分享到网盘 链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1UZM-39Kp0kNEkuBLw1PTZA提取码：4ips">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode使用和配置（极简）">
+<meta property="og:url" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="bug设计工程师">
-<meta property="og:description" content="如果你不觉得一年前的自己是一个蠢货，那说名这一年你并没学到什么东西">
+<meta property="og:description" content="vscode使用和配置文章需要用到工具    工具     vscode https:&#x2F;&#x2F;code.visualstudio.com&#x2F;   mingw64 https:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;mingw-w64&#x2F;files&#x2F;    软件已经分享到网盘 链接：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1UZM-39Kp0kNEkuBLw1PTZA提取码：4ips">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/20200704111340179.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/20200704111401317.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210421235802165.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/20200704111517347.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210422001324779.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210425172125208.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427104455698.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210425172339517.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427105725047.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427105920827.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427110105389.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427111000147.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427111542969.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427105725047.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427111639849.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427111938896.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427112333093.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427112359292.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427112643018.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427112923040.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427113001674.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427113049400.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/20200704111712725.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/20200704111722240.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427162228594.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210422001324779.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427162320193.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427111000147.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427162940954.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210422103807067.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210422103826820.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210422103933476.png">
+<meta property="og:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/image-20210427163227400.png">
+<meta property="article:published_time" content="2021-05-05T16:32:08.000Z">
+<meta property="article:modified_time" content="2021-05-05T16:34:27.908Z">
 <meta property="article:author" content="林艺斌xx">
+<meta property="article:tag" content="vscode">
+<meta property="article:tag" content="c&#x2F;c++">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/20200704111340179.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>bug设计工程师</title>
+  <title>vscode使用和配置（极简） | bug设计工程师</title>
   
 
 
@@ -157,9 +195,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -175,10 +214,9 @@
       <meta itemprop="name" content="bug设计工程师">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/06/vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9E%81%E7%AE%80%EF%BC%89/" class="post-title-link" itemprop="url">vscode使用和配置（极简）</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          vscode使用和配置（极简）
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -200,7 +238,14 @@
                 </span>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -225,7 +270,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="vscode使用和配置"><a href="#vscode使用和配置" class="headerlink" title="vscode使用和配置"></a>vscode使用和配置</h1><p>文章需要用到工具</p>
+        <h1 id="vscode使用和配置"><a href="#vscode使用和配置" class="headerlink" title="vscode使用和配置"></a>vscode使用和配置</h1><p>文章需要用到工具</p>
 <table>
 <thead>
 <tr>
@@ -453,188 +498,34 @@
 <p>后续会在我的个人博客<a target="_blank" rel="noopener" href="http://www.bugdesign.cn或`bugdesign.cn`更新vscode/">www.bugdesign.cn或`bugdesign.cn`更新vscode</a> python等等配置</p>
 </blockquote>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/vscode/" rel="tag"># vscode</a>
+              <a href="/tags/c-c/" rel="tag"># c/c++</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/21/test/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="林艺斌xx">
-      <meta itemprop="description" content="如果你不觉得一年前的自己是一个蠢货，那说名这一年你并没学到什么东西">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bug设计工程师">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/21/test/" class="post-title-link" itemprop="url">test</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-04-21 13:17:52 / 修改时间：13:18:30" itemprop="dateCreated datePublished" datetime="2021-04-21T13:17:52+08:00">2021-04-21</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="/2021/04/21/test/head.jpg" alt="head"></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/21/test/" rel="prev" title="test">
+      <i class="fa fa-chevron-left"></i> test
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpg">
-      <meta itemprop="name" content="林艺斌xx">
-      <meta itemprop="description" content="如果你不觉得一年前的自己是一个蠢货，那说名这一年你并没学到什么东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bug设计工程师">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/21/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-04-21 09:57:17 / 修改时间：10:28:22" itemprop="dateCreated datePublished" datetime="2021-04-21T09:57:17+08:00">2021-04-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/file/" itemprop="url" rel="index"><span itemprop="name">file</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>367</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -687,6 +578,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vscode%E4%BD%BF%E7%94%A8%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">vscode使用和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%B6%E3%80%81%E5%BC%95%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">零、引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="nav-number">1.2.</span> <span class="nav-text">一、下载安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81vscode%E4%B8%AD%E6%96%87%E6%94%AF%E6%8C%81"><span class="nav-number">1.3.</span> <span class="nav-text">二、vscode中文支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81c-c-%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83"><span class="nav-number">1.4.</span> <span class="nav-text">三、c&#x2F;c++编译环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85c-c-%E6%8F%92%E4%BB%B6"><span class="nav-number">1.4.1.</span> <span class="nav-text">安装c&#x2F;c++插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Chinese%E6%8F%92%E4%BB%B6"><span class="nav-number">1.4.2.</span> <span class="nav-text">安装Chinese插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%BC%96%E8%AF%91%E5%99%A8"><span class="nav-number">1.4.3.</span> <span class="nav-text">配置编译器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BC%96%E8%AF%91%E6%96%87%E4%BB%B6%EF%BC%88%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%89"><span class="nav-number">1.5.</span> <span class="nav-text">四、编译文件（方法一）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E4%BE%8B%E7%A8%8B%EF%BC%88%E5%8D%95%E6%96%87%E4%BB%B6%EF%BC%89"><span class="nav-number">1.5.1.</span> <span class="nav-text">编译例程（单文件）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E4%BE%8B%E7%A8%8B%EF%BC%88%E5%A4%9A%E6%96%87%E4%BB%B6%EF%BC%89"><span class="nav-number">1.5.2.</span> <span class="nav-text">编译例程（多文件）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E8%AF%95%E4%BE%8B%E7%A8%8B%EF%BC%88%E5%8D%95%E3%80%81%E5%A4%9A%E6%96%87%E4%BB%B6%EF%BC%89"><span class="nav-number">1.5.3.</span> <span class="nav-text">调试例程（单、多文件）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BC%96%E8%AF%91%E6%96%87%E4%BB%B6%EF%BC%88%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%89"><span class="nav-number">1.6.</span> <span class="nav-text">四、编译文件（方法二）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85code-runner%E6%8F%92%E4%BB%B6"><span class="nav-number">1.6.1.</span> <span class="nav-text">安装code runner插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E6%96%87%E4%BB%B6%EF%BC%88%E5%8D%95%E6%96%87%E4%BB%B6%EF%BC%89"><span class="nav-number">1.6.2.</span> <span class="nav-text">编译文件（单文件）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E6%96%87%E4%BB%B6%EF%BC%88%E5%A4%9A%E6%96%87%E4%BB%B6%EF%BC%89"><span class="nav-number">1.6.3.</span> <span class="nav-text">编译文件（多文件）</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
